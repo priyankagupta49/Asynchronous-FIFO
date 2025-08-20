@@ -24,7 +24,6 @@ end
     
 endmodule
 
-/*
 module b2g_convert #(
     parameter PTR_WIDTH=3
 ) (
@@ -59,7 +58,6 @@ end
 
     
 endmodule
-*/
 
 module wptr_handler #(
     parameter WIDTH=3
