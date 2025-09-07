@@ -1,4 +1,4 @@
-`timescale 10s / 1s
+`timescale 1ns / 1ps
 module tfsync #(parameter WIDTH=3)(
       input [WIDTH:0] din,
       input clk,
@@ -23,6 +23,7 @@ begin
 end
     
 endmodule
+
 
 module b2g_convert #(
     parameter PTR_WIDTH=3
@@ -58,6 +59,7 @@ end
 
     
 endmodule
+
 
 module wptr_handler #(
     parameter WIDTH=3
