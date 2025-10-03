@@ -51,8 +51,8 @@ integer i;
 
 always@(*)begin
     binary_output[PTR_WIDTH-1]<=gray_input[PTR_WIDTH-1];
-    for (i =1;i<PTR_WIDTH ;i=i+1 ) begin
-        binary_output[i]<=binary_output[i-1]^(gray_input[i]);
+      for (i =1;i<PTR_WIDTH ;i=i-1 ) begin
+          binary_output[i]<=binary_output[i+1]^(gray_input[i]);
         
     end
 end
